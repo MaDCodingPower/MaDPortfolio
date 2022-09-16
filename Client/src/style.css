@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --light: #ddf6cb;
+    --mint: #A9FDAC;
+    --green: #44CF6C; 
+    --zomp: #32A287; 
+    --dark: #44633F; 
+}
+
+html {
+    /* max-width: 1500px; */
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: var(--mint);
+    text-align: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    box-shadow: 3px 3px 10px .5px #1d4326;
+    border-radius: 0 0 1em 1em;
+    min-width: 100em;
+}
+
+.name {
+    font-size: 3em;
+    color: var(--dark);
+    padding-top: .35em;
+    padding-left: .5em;
+}
+
+.navBarLinks {
+    display: flex;
+    justify-content: end;
+}
+
+.navLink {
+    font-size: 2em;
+    padding-top: .8em;
+    margin-right: .6em;
+    text-decoration: none;
+    color: var(--zomp);
+    border-bottom: 1px solid #A9FDAC;
+    transition: .6s;
+}
+
+.navLink:hover {
+    border-bottom: 1px solid #44633F;
+    color: var(--dark);
+}
+
+.contactLink:hover{
+    color: var(--dark);
+}
+
+h3 {
+    font-size: 2em;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #44633F;
+    padding: 2em 0 .5em 1em;
+    padding-top: 4em
+}
+
+.sectionHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 3em
+}
+
+.matthewHeadshot {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 1em; 
+    box-shadow: 3px 3px 10px .5px #222222;
+    transition: .3s ease-in-out;
+}
+
+.matthewHeadshot:hover {
+    opacity: 0;
+}
+
+.shadow {
+    width: 390.375px;
+    max-height: 400px;
+    border-radius: 1em; 
+    box-shadow: 3px 3px 10px .5px #222222;
+    position: absolute;
+    opacity: 0.000000001;
+    transition: .3s ease-in-out;
+}
+
+.shadow:hover {
+    opacity: 1;
+}
+
+#bio {
+    padding-left: 2em;
+    padding-top: 2em;
+    font-size: 1.6em;
+}
+
+.projectImg {
+    max-width: 80%;
+    height: 70%;
+    margin: 3em 3em;
+    box-shadow: 3px 3px 10px .5px #1d4326;
+    border-radius: 2em;
+}
+
+.projectImgCard {
+    transition: .4s;
+    flex: 1 1 30%;
+}
+
+.projectImgCard:hover {
+    transform: scale(1.05);
+}
+
+.cardLabel{
+    position: relative;
+    bottom: 5.68em;
+    left: 1.5em;
+    font-size: 2em;
+    border-radius: 1em;
+    padding: .5em;
+    background-color: var(--mint);
+    color: #275231;
+    width: 60%;
+    opacity: 93%;
+    text-decoration: none !important;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+.flexContainerRow{
+    width: 90%;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.logos {
+    max-width: 111px;
+    margin-top: 3em;
+    transition: .3s;
+}
+
+.logos:hover {
+    transform: scale(1.03);
+}
+
+.contact {
+    margin: 2em 0 4em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #c9e9b2;
+    border-radius: 2em;
+    padding: 0 2em 2em 2em;
+}
+
+.contactGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.github {
+    border-radius: 1em;
+}
+
+.contactLink {
+    text-decoration: none;
+    font-size: 2em;
+    color:rgb(140, 187, 141);
+    transition: .6s;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #97a88b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerImage{
+    display: block;
+    max-width: 4em;
+    max-height: 4em;
+}
+
+footer div {
+    font-size: 1em;
+}
+
+.navbar {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navBarLinks{
+        justify-content: center;
+        margin-left: 1em;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aboutMe, .projects {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #bio {
+        padding: .5em;
+    }
+
+    .matthewHeadshot {
+        margin-bottom: 2em;
+    }
+
+    .contact {
+        width: 90%;
+        align-items: center;
+    }
+
+    .contactLink {
+        display: none;
+    }
+    
+}
