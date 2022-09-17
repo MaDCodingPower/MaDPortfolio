@@ -4,7 +4,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 // import Footer from './Footer'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 export default function PortfolioContainer() {
