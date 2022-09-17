@@ -17,7 +17,7 @@ export default function PortfolioContainer() {
             <Route path='/MaDPortfolio' element={<Contact />} />  
             {/* <Route path='/About' element={<About />} /> */}
             <Route path='/' element={<Projects />} />
-            <Route path='/Contact' element={<About />} />
+            <Route path='/MaDPortfolio/Contact' element={<About />} />
           </Routes>
         </main>
         {/* <Footer /> */}
