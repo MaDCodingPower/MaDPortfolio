@@ -5,9 +5,9 @@ export default function NavTabs () {
         <header>
             <div class="name">Matthew Davis</div>
                 <div class="navBarLinks">
-                    <a class="navLink" href="/MaDPortfolio/About">About Me</a>
-                    <a class="navLink" href="/MaDPortfolio/Project">Projects</a>
-                    <a class="navLink" href="/MaDPortfolio/Contact">Contact</a>
+                    <a class="navLink" href="/About">About Me</a>
+                    <a class="navLink" href="/Project">Projects</a>
+                    <a class="navLink" href="/Contact">Contact</a>
                 </div>
         </header>
     )
