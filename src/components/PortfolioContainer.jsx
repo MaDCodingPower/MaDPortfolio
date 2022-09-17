@@ -14,10 +14,10 @@ export default function PortfolioContainer() {
         <NavTabs />
         <main>
           <Routes>
-            <Route path='/MaDPortfolio' element={<Contact />} />  
-            {/* <Route path='/About' element={<About />} /> */}
-            <Route path='/' element={<Projects />} />
-            <Route path='/MaDPortfolio/Contact' element={<About />} />
+            <Route path='/' element={<About />} />  
+            <Route path='/About' element={<About />} />
+            <Route path='/Project' element={<Projects />} />
+            <Route path='/Contact' element={<Contact />} />
           </Routes>
         </main>
         {/* <Footer /> */}
