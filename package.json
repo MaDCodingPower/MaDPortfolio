@@ -16,7 +16,7 @@
   },
   "homepage": "https://MaDCodingPower.github.io/MaDPortfolio",
   "scripts": {
-    "deploy": "gh-pages -d",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
